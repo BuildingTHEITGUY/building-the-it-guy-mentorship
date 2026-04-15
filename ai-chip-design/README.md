@@ -88,6 +88,40 @@ If you want to capitalize on this, here is your roadmap:
 
 <div align="center">
 
+---
+
+<div align="center">
+
+## 👨‍💻 Tutorial: Your First Chip ("Hello World" of Hardware)
+
+</div>
+
+To prove how accessible this is, we are going to design a piece of hardware and test it right now using **SystemVerilog**. 
+
+We are going to build a **4-Bit Binary Counter**. Imagine this as a tiny digital stopwatch inside a processor that counts up every time the computer's "heart" (the clock) beats.
+
+> **💡 Pro-Tip:** You can copy the code below, or you can download the actual `counter.sv` and `tb_counter.sv` files directly from this repository folder!
+
+### Step 1: The Design (The "IP Core")
+This code represents the physical logic gates of our chip. Create a file named `counter.sv` (or use the one in this repo):
+
+```systemverilog
+// This is the hardware design for a 4-bit counter
+module counter_4bit (
+    input  logic clk,       // The system clock (the heartbeat)
+    input  logic rst,       // The reset signal
+    output logic [3:0] count // 4-bit output (counts from 0 to 15)
+);
+
+    always_ff @(posedge clk or posedge rst) begin
+        if (rst) begin
+            count <= 4'b0000; // If reset is triggered, force to 0
+        end else begin
+            count <= count + 1; // Otherwise, add 1 to the count
+        end
+    end
+endmodule
+
 **[ ⬆ Back to Top ](#)** | **[ 🏠 Return to Mentorship Hub ](../README.md)**
 
 </div>
