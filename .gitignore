@@ -137,3 +137,10 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# --- Custom Hardware & EDA Rules ---
+*.vcd       # Simulation waveform files
+*.log       # Simulation logs
+*.jou       # Tool journal files
+*.pb        # Protocol buffer files
+dump.vcd    # Specific dump file from our tutorial
