@@ -23,15 +23,39 @@ If you are a university student in computer science, electronics, or IT, you are
 
 ### 🏭 The Myth of the Billion-Dollar Factory
 
-When most people think of semiconductors, they picture workers in full-body cleanroom suits. This creates the illusion that the chip industry is closed off to individuals. The reality is the industry is split in two:
+When most people think of semiconductors, they picture workers in full-body cleanroom suits.
+This creates the illusion that chip design is closed off to individuals. **It isn't.**
 
-| 🏗️ The Foundries (The Printers) | 💻 The Fabless Designers (The Architects) |
-| :--- | :--- |
-| Companies like **TSMC** or **Samsung**. | Companies like **NVIDIA**, **AMD**, or **YOU**. |
-| Requires multi-billion dollar factories. | Requires a laptop and open-source software. |
-| Physically prints the silicon wafers. | Writes the code that dictates how the chip thinks. |
+<div align="center">
 
-Designing an AI accelerator or a custom processor is essentially a **software engineering process**. You write the logic, simulate it, and send the digital files off to be printed.
+<img src="./assets/chip-die.jpg" width="650" alt="Silicon chip die shot"/>
+
+*The chip above was designed by engineers at desks — not in cleanrooms.*
+
+</div>
+
+<br>
+
+The industry is split into two very different worlds:
+
+<div align="center">
+
+| | 🏗️ **The Foundries** *(The Printers)* | 💻 **The Fabless Designers** *(The Architects)* |
+|:---:|:---|:---|
+| **Who** | TSMC, Samsung, GlobalFoundries | NVIDIA, AMD, Apple, **YOU** |
+| **What they need** | $10B+ factories & cleanrooms | A laptop & open-source tools |
+| **What they do** | Physically print silicon wafers | Write the logic that makes chips think |
+| **Barrier to entry** | 🔴 Extremely high | 🟢 Zero — start today |
+
+</div>
+
+<br>
+
+> 🎯 **The key insight:** Designing an AI accelerator or custom processor is fundamentally
+> a **software engineering process**. You write the logic, simulate it, and send
+> the digital blueprint to a foundry to be printed.
+> **The billion-dollar factory is someone else's problem.**
+
 
 ---
 
