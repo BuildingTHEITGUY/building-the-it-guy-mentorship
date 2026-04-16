@@ -255,31 +255,6 @@ By completing this exercise, you demonstrated three real industry skills:
 
 ---
 
-### 🚀 Your Portfolio Move
-
-Now that your simulation runs, here's how to turn this into a **real portfolio piece**:
-
-- [ ] Push both files (`counter.sv` + `tb_counter.sv`) to your GitHub repo
-- [ ] Add a `/screenshots` folder with your EPWave waveform screenshot
-- [ ] Write a `README.md` inside your project folder explaining what the counter does
-- [ ] Extend the design — try building an 8-bit counter, or add an `enable` signal
-- [ ] Verify an open-source core — find a RISC-V repo on GitHub and write a testbench for one of its modules
-
----
-
-### 📚 Recommended Next Topics
-
-| **Topic** | **Why It Matters** |
-| :--- | :--- |
-| SystemVerilog Assertions (SVA) | Industry-standard self-checking testbenches |
-| UVM (Universal Verification Methodology) | The framework used at every major chip company |
-| Verilator | Compile your design to C++ for ultra-fast simulation |
-| OpenLane / OpenROAD | Take your design all the way to a physical chip layout |
-
----
-
-<div align="center">
-
 **[ ⬆ Back to Top ](#)** | **[ 🏠 Return to Mentorship Hub ](../README.md)**
 
 </div>
