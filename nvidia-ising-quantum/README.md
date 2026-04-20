@@ -88,7 +88,24 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 If your research focuses on fault tolerance, you can utilize the `Ising-Decoder-SurfaceCode-1-Accurate` model. This allows you to simulate surface code decoding, a critical step in maintaining stable quantum states over time.
 
 ---
+---
 
+## 📖 Full Tutorial
+
+Ready to run NVIDIA Ising in your own environment? The complete hands-on tutorial covers:
+
+- 🔑 Setting up your free NVIDIA NIM API key
+- 🔬 Running quantum calibration via the VLM
+- ⚛️ Surface code decoding on free Google Colab
+- ☁️ One-click Colab launch badge
+
+<div align="center">
+
+[![Read the Full Tutorial](https://img.shields.io/badge/📖_Read_the_Full_Tutorial-TUTORIAL.md-blue?style=for-the-badge)](./TUTORIAL.md)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/tutorial.ipynb)
+
+</div>
 <div align="center">
   <i>This ecosystem provides a robust foundation for anyone looking to merge deep learning with quantum mechanics. By integrating these tools into your university lab or personal research, you are positioning yourself at the absolute cutting edge of the quantum computing revolution.</i>
 </div>
