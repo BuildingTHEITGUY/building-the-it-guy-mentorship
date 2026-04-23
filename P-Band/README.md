@@ -438,7 +438,7 @@ If you use this material in academic work, teaching, or presentations:
 ## 👤 About the Author
 
 **Mohamed Asath**
-Earth Observation Learner · Father · Mentor
+Learner · Father · Mentor
 
 What started as a father learning about satellites for his space-obsessed kids became a mission to make Earth observation accessible to everyone. This project is part of the [**Building The IT Guy Mentorship**](https://github.com/BuildingTHEITGUY/building-the-it-guy-mentorship) program — a growing collection of hands-on learning labs spanning AI chip design, quantum computing, and Earth observation from space.
 
