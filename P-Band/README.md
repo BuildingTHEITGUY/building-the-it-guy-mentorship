@@ -1,41 +1,90 @@
-# 🛰️ Exploring P-Band SAR & The ESA BIOMASS Mission
+# P-Band SAR & The ESA BIOMASS Mission
 
-Welcome to my research repository! I created this space to document my learnings after attending the European Space Agency's (ESA) webinar: **"ESA P-band SAR Mission Status One Year After Launch."**
-
-## 📡 What is P-Band Radar?
-The P-band refers to the lower-frequency portion of the electromagnetic spectrum used by satellites.It is characterized by a long wavelength of around 70 cm. Unlike traditional X or C-band radars that bounce off the tops of trees, P-band's long wavelength gives it a unique superpower: **Penetration**. It can "see" straight through leaves and branches to the trunks, the forest floor, and even deep underground.
-
-## 🌍 The ESA BIOMASS Mission
-[cite_start]Launched in April 2025, the ESA BIOMASS mission is the first satellite to carry a P-band Synthetic Aperture Radar into space. Now in its operational phase, the satellite is delivering its first scientific results.
-
-### Key Applications & Early Insights
-**Forest Biomass Mapping:** By measuring the actual wood mass in global forests, scientists can calculate exactly how much carbon our forests are storing.
-**Subsurface Imaging:** P-band signals can penetrate dry sand and soil by several meters, revealing hidden geological structures, buried riverbeds, and archaeological sites in desert environments.
-
-## 💻 Open-Source Tools & Datasets
-If you are a data scientist or developer looking to get hands-on with Earth Observation (EO) data, here are the best resources:
-
-* **ESA Earth Online Gateway:** The official hub for accessing raw ESA Earth observation datasets.
-* **BioPAL (GitHub):** The official open-source software library developed by the ESA. [cite_start]It processes Level 1 SAR products into Level 2 forest products, such as Above Ground Biomass (AGB)[cite: 93, 94].
-* [cite_start]**SpaceML / M3LEO (GitHub):** A PyTorch Lightning framework for Earth Observation machine learning[cite: 96].
-* [cite_start]**M3LEO Dataset (Hugging Face):** A massive dataset containing around 17 million data chips, combining SAR data with optical imagery for AI training[cite: 98, 99].
+> A hands-on learning lab for students, researchers, and faculty exploring P-Band Synthetic Aperture Radar and the ESA BIOMASS satellite mission.
 
 ---
 
-## 🌐 Useful Resources
+## What This Repo Is
 
-Here are some valuable resources for exploring Earth Observation data:
+This is NOT a textbook. Every folder is a **mission** -- a self-contained, practical exercise using **real satellite data** from ESA.
 
-- **[ESA Earth Online Gateway](https://earth.esa.int/eogateway):** Access a wide range of Earth observation datasets.
-- **[Search for Datasets](https://earth.esa.int/eogateway/search?category=data&data_access_type=eo-sign-in-authentication-open):** Find specific datasets related to your research.
+| # | Mission | Folder | Difficulty | Time |
+|---|---------|--------|-----------|------|
+| 1 | Your First SAR Image | 01-your-first-sar-image/ | Beginner | 30 min |
+| 2 | BIOMASS Data Explorer | 02-biomass-data-explorer/ | Intermediate | 1 hour |
+| 3 | Forest Carbon Calculator | 03-forest-carbon-calculator/ | Intermediate | 1.5 hours |
+| 4 | Subsurface Detective | 04-subsurface-detective/ | Advanced | 2 hours |
+| 5 | ML-Powered SAR Classifier | 05-ml-sar-classifier/ | Advanced | 3 hours |
 
-### 🖼️ Visual Examples
-![P-Band SAR Example](path/to/your/image.jpg)  
-*Caption: An example of P-Band SAR imagery.*
+---
 
-### 📦 Related GitHub and Hugging Face Repositories
-- **[BioPAL (GitHub)](https://github.com/your-repo/bio-pal):** Open-source software for processing SAR products.
-- **[M3LEO Dataset (Hugging Face)](https://huggingface.co/datasets/m3leo):** A dataset for training AI models with SAR and optical imagery.
+## What is P-Band Radar?
 
+P-band uses a **~70 cm wavelength** -- long enough to penetrate tree canopies, dry sand, and soil. Unlike C-band (Sentinel-1) or X-band (TerraSAR-X), P-band sees **through** vegetation to trunks, the forest floor, and even subsurface structures.
 
-*Maintained by Mohamed Asath as part of ongoing Earth Observation research.*
+---
+
+## The ESA BIOMASS Mission
+
+Launched April 2025, BIOMASS is the **first P-band SAR satellite in space**. It maps global forest biomass to quantify how much carbon Earth's forests store.
+
+### Key Applications
+- **Forest Biomass Mapping:** Measure wood mass to calculate carbon storage
+- **Subsurface Imaging:** Penetrate dry sand to reveal buried rivers, archaeological sites
+- **Ice Sheet Mapping:** See internal structure of glaciers
+
+---
+
+## Quick Start
+
+Option A - Conda:
+
+    cd 00-setup/
+    conda env create -f environment.yml
+    conda activate p-band-sar
+    jupyter lab
+
+Option B - Docker:
+
+    cd 00-setup/
+    docker build -t pband-sar .
+    docker run -p 8888:8888 pband-sar
+
+---
+
+## Key Resources
+
+| I want to... | Go here |
+|---|---|
+| Download BIOMASS data | [ESA Earth Online](https://earth.esa.int/eogateway) |
+| Process SAR to Biomass maps | [BioPAL (GitHub)](https://github.com/BioPAL/BioPAL) |
+| Train ML models on SAR | [M3LEO (Hugging Face)](https://huggingface.co/datasets/m3leo) |
+| Understand the mission | [ESA BIOMASS Official](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass) |
+
+---
+
+## Open-Source Tools & Datasets
+
+- **[BioPAL](https://github.com/BioPAL/BioPAL):** Official ESA library -- processes Level 1 SAR to Level 2 forest products (AGB)
+- **[M3LEO Dataset](https://huggingface.co/datasets/m3leo):** ~17 million data chips combining SAR + optical imagery for AI training
+- **[ESA Earth Online](https://earth.esa.int/eogateway):** Official hub for all ESA Earth observation datasets
+
+---
+
+## Repository Structure
+
+    P-Band/
+    |-- README.md
+    |-- 00-setup/                        <- Environment setup
+    |-- 01-your-first-sar-image/         <- Mission 1: Download & visualize
+    |-- 02-biomass-data-explorer/        <- Mission 2: Real BIOMASS data
+    |-- 03-forest-carbon-calculator/     <- Mission 3: Carbon estimation
+    |-- 04-subsurface-detective/         <- Mission 4: Desert penetration
+    |-- 05-ml-sar-classifier/           <- Mission 5: AI on SAR data
+    |-- cheatsheets/                     <- Quick-reference cards
+    |-- data/                            <- Sample datasets + scripts
+    |-- resources/                       <- Links, papers, notes
+
+---
+
+*Maintained by Mohamed Asath as part of the [Building The IT Guy Mentorship](https://github.com/BuildingTHEITGUY/building-the-it-guy-mentorship) program.*

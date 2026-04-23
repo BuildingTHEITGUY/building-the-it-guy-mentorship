@@ -1,0 +1,24 @@
+name: p-band-sar
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyterlab=4.0
+  - numpy
+  - pandas
+  - matplotlib
+  - rasterio
+  - geopandas
+  - shapely
+  - scipy
+  - scikit-learn
+  - earthengine-api
+  - pip
+  - pip:
+    - sentinelsat
+    - pytorch-lightning
+    - torch
+    - torchvision
+    - datasets
+    - huggingface-hub

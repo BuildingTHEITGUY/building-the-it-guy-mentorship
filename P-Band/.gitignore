@@ -1,0 +1,22 @@
+# Data files (too large for Git)
+data/mission_*/
+*.tif
+*.tiff
+*.nc
+*.hdf5
+*.h5
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Environment
+.env
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
