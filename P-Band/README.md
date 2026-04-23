@@ -67,6 +67,14 @@ Unlike traditional X-band or C-band radars that bounce off the tops of trees, P-
 
 <br>
 
+<div align="center">
+<img src="resources/sar-band-comparison.jpg" alt="SAR Band Penetration Comparison - X, C, L, P Band" width="850">
+<br>
+<em>SAR band penetration comparison — longer wavelengths penetrate deeper into vegetation and ground.</em>
+</div>
+
+<br>
+
 <pre>
      What C-Band Sees                    What P-Band Sees
      (Sentinel-1, 5.6 cm)               (BIOMASS, 70 cm)
