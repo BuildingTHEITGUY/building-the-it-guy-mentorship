@@ -1,90 +1,87 @@
-# P-Band SAR & The ESA BIOMASS Mission
+<div align="center">
 
-> A hands-on learning lab for students, researchers, and faculty exploring P-Band Synthetic Aperture Radar and the ESA BIOMASS satellite mission.
 
----
+# 🛰️ Exploring P-Band SAR & The ESA BIOMASS Mission
 
-## What This Repo Is
+Welcome to my research repository! I created this space to document my learnings after attending the European Space Agency's (ESA) webinar: **"ESA P-band SAR Mission Status One Year After Launch."** ## 📡 What is P-Band Radar?
+The P-band refers to the lower-frequency portion of the electromagnetic spectrum used by satellites. 
+It is characterized by a long wavelength of around 70 cm. 
+Unlike traditional X or C-band radars that bounce off the tops of trees, P-band's long wavelength gives it a unique superpower: **Penetration**. 
+It can "see" straight through leaves and branches to the trunks, the forest floor, and even deep underground.
 
-This is NOT a textbook. Every folder is a **mission** -- a self-contained, practical exercise using **real satellite data** from ESA.
+## 🌍 The ESA BIOMASS Mission
+[Launched in April 2025, the ESA BIOMASS mission is the first satellite to carry a P-band Synthetic Aperture Radar into space. Now in its operational phase, the satellite is delivering its first scientific results.
 
-| # | Mission | Folder | Difficulty | Time |
-|---|---------|--------|-----------|------|
-| 1 | Your First SAR Image | 01-your-first-sar-image/ | Beginner | 30 min |
-| 2 | BIOMASS Data Explorer | 02-biomass-data-explorer/ | Intermediate | 1 hour |
-| 3 | Forest Carbon Calculator | 03-forest-carbon-calculator/ | Intermediate | 1.5 hours |
-| 4 | Subsurface Detective | 04-subsurface-detective/ | Advanced | 2 hours |
-| 5 | ML-Powered SAR Classifier | 05-ml-sar-classifier/ | Advanced | 3 hours |
+### Key Applications & Early Insights
 
----
+### The First P-Band Radar in Space — A Hands-On Research Lab
 
-## What is P-Band Radar?
+<br>
 
-P-band uses a **~70 cm wavelength** -- long enough to penetrate tree canopies, dry sand, and soil. Unlike C-band (Sentinel-1) or X-band (TerraSAR-X), P-band sees **through** vegetation to trunks, the forest floor, and even subsurface structures.
+[![ESA BIOMASS](https://img.shields.io/badge/ESA-BIOMASS_Mission-003DA5?style=for-the-badge)](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
+[![PyTorch](https://img.shields.io/badge/PyTorch-Lightning-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org)
+[![Hugging Face](https://img.shields.io/badge/HuggingFace-M3LEO_Dataset-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/datasets/m3leo)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
----
+<br>
 
-## The ESA BIOMASS Mission
+*Built after attending ESA's official webinar:*
+***"ESA P-band SAR Mission Status — One Year After Launch"***
 
-Launched April 2025, BIOMASS is the **first P-band SAR satellite in space**. It maps global forest biomass to quantify how much carbon Earth's forests store.
+<br>
 
-### Key Applications
-- **Forest Biomass Mapping:** Measure wood mass to calculate carbon storage
-- **Subsurface Imaging:** Penetrate dry sand to reveal buried rivers, archaeological sites
-- **Ice Sheet Mapping:** See internal structure of glaciers
+[Why This Exists](#-why-this-exists) · [The Science](#-the-science-of-p-band) · [5 Missions](#-the-5-missions) · [Quick Start](#-quick-start) · [Resources](#-resources--datasets) · [Cite This Work](#-citation)
 
----
+</div>
 
-## Quick Start
-
-Option A - Conda:
-
-    cd 00-setup/
-    conda env create -f environment.yml
-    conda activate p-band-sar
-    jupyter lab
-
-Option B - Docker:
-
-    cd 00-setup/
-    docker build -t pband-sar .
-    docker run -p 8888:8888 pband-sar
+<br>
 
 ---
 
-## Key Resources
+<br>
 
-| I want to... | Go here |
-|---|---|
-| Download BIOMASS data | [ESA Earth Online](https://earth.esa.int/eogateway) |
-| Process SAR to Biomass maps | [BioPAL (GitHub)](https://github.com/BioPAL/BioPAL) |
-| Train ML models on SAR | [M3LEO (Hugging Face)](https://huggingface.co/datasets/m3leo) |
-| Understand the mission | [ESA BIOMASS Official](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Biomass) |
+## 🧠 Why This Exists
+
+Most SAR resources are **walls of theory** — papers you bookmark but never finish, slides you skim and forget.
+
+This repository takes a different approach. Every folder is a **mission** — a self-contained exercise where you work with **real ESA satellite data**, write **real code**, and produce **real outputs** you can put in a thesis, a conference paper, or a portfolio.
+
+> **The rule:** No notebook ends with just text. Every mission produces a map, a chart, a carbon estimate, or a trained model.
+
+<br>
+
+### Who Is This For?
+
+<table>
+<tr>
+<td width="33%" align="center">
+<h4>🎓 Students</h4>
+<p>Start at Mission 1.<br>No prior SAR knowledge needed.<br>You'll have a portfolio piece by Mission 3.</p>
+</td>
+<td width="33%" align="center">
+<h4>🔬 Researchers</h4>
+<p>Jump to Mission 3 or 4.<br>Real data, real methods,<br>reproducible workflows for your papers.</p>
+</td>
+<td width="33%" align="center">
+<h4>👩‍🏫 Faculty</h4>
+<p>Use missions as lab exercises.<br>Each is 30 min – 3 hrs, self-contained,<br>with clear learning objectives.</p>
+</td>
+</tr>
+</table>
+
+<br>
 
 ---
 
-## Open-Source Tools & Datasets
+<br>
 
-- **[BioPAL](https://github.com/BioPAL/BioPAL):** Official ESA library -- processes Level 1 SAR to Level 2 forest products (AGB)
-- **[M3LEO Dataset](https://huggingface.co/datasets/m3leo):** ~17 million data chips combining SAR + optical imagery for AI training
-- **[ESA Earth Online](https://earth.esa.int/eogateway):** Official hub for all ESA Earth observation datasets
+## 📡 The Science of P-Band
 
----
+### What Makes P-Band Special?
 
-## Repository Structure
+**P-band** operates at **435 MHz** with a **~70 cm wavelength** — the longest wavelength SAR ever deployed in orbit. While conventional radar reflects off surfaces, P-band **penetrates through them**.
 
-    P-Band/
-    |-- README.md
-    |-- 00-setup/                        <- Environment setup
-    |-- 01-your-first-sar-image/         <- Mission 1: Download & visualize
-    |-- 02-biomass-data-explorer/        <- Mission 2: Real BIOMASS data
-    |-- 03-forest-carbon-calculator/     <- Mission 3: Carbon estimation
-    |-- 04-subsurface-detective/         <- Mission 4: Desert penetration
-    |-- 05-ml-sar-classifier/           <- Mission 5: AI on SAR data
-    |-- cheatsheets/                     <- Quick-reference cards
-    |-- data/                            <- Sample datasets + scripts
-    |-- resources/                       <- Links, papers, notes
+<br>
 
----
-
-*Maintained by Mohamed Asath as part of the [Building The IT Guy Mentorship](https://github.com/BuildingTHEITGUY/building-the-it-guy-mentorship) program.*
